@@ -2,8 +2,8 @@ class sco_ahb extends uvm_env;
 
     `uvm_component_utils(sco_ahb)
 
-    function new(string name = "sco_ahb",parent = componennt);
-    super.new(name,component);
+    function new(string name = "sco_ahb", uvm_component parent);
+    super.new(name,parent);
         
     endfunction
 

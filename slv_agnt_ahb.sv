@@ -2,8 +2,8 @@ class slv_agnt_ahb extends uvm_env;
 
     `uvm_component_utils(slv_agnt_ahb)
 
-    function new(string name = "slv_agnt_ahb",parent = componennt);
-    super.new(name,component);
+    function new(string name = "slv_agnt_ahb", uvm_component parent);
+    super.new(name,parent);
         
     endfunction
 

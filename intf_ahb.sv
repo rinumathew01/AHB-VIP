@@ -1,3 +1,3 @@
-interface intf_ahb;
+interface intf_ahb();
 
 endinterface

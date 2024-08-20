@@ -1,5 +1,9 @@
 `include "uvm_macros.svh"
 import uvm_pkg::*;
+
+`include "intf_ahb.sv"
+
+`include "pkg_ahb.sv"
 import pkg_ahb::*;
 
 module top_ahb;
