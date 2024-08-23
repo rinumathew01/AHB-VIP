@@ -8,7 +8,7 @@ class mstr_mon_ahb extends uvm_monitor;
     extern function void build_phase(uvm_phase phase);
     extern function void connect_phase(uvm_phase phase);
 
-endclass :: mstr_mon_ahb
+endclass :mstr_mon_ahb
 
         function mstr_mon_ahb::new(string name = "mstr_mon_ahb",uvm_component parent);
             super.new(name,parent);

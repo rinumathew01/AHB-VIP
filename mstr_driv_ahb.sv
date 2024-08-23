@@ -8,7 +8,7 @@ class mstr_driv_ahb extends uvm_driver#(mstr_item_ahb);
     extern function void build_phase(uvm_phase phase);
     extern function void connect_phase(uvm_phase phase);
 
-endclass :: mstr_driv_ahb
+endclass :mstr_driv_ahb
 
         function mstr_driv_ahb::new(string name = "mstr_driv_ahb",uvm_component parent);
             super.new(name,parent);  

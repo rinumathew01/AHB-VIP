@@ -8,7 +8,7 @@ class slv_driv_ahb extends uvm_driver#(slv_item_ahb);
     extern function void build_phase(uvm_phase phase);
     extern function void connect_phase(uvm_phase phase);
 
-endclass :: slv_driv_ahb
+endclass : slv_driv_ahb
 
         function slv_driv_ahb::new(string name = "slv_driv_ahb",uvm_component parent);
             super.new(name,parent);  

@@ -3,7 +3,7 @@ class slv_agnt_ahb extends uvm_agent;
     `uvm_component_utils(slv_agnt_ahb)
 
     sagnt_config sagnt_cfg;
-    uvm_active_passive_agent is_active;
+    uvm_active_passive_enum is_active;
 
     slv_driv_ahb sdriv;
     slv_mon_ahb smon;
@@ -13,7 +13,7 @@ class slv_agnt_ahb extends uvm_agent;
     extern function void build_phase(uvm_phase phase);
     extern function void connect_phase(uvm_phase phase);
  
-endclass :: slv_agnt_ahb
+endclass : slv_agnt_ahb
 
             function slv_agnt_ahb::new(string name = "slv_agnt_ahb",uvm_component parent);
                 super.new(name,parent);

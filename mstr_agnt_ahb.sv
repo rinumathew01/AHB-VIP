@@ -13,7 +13,7 @@ class mstr_agnt_ahb extends uvm_agent;
     extern function void build_phase(uvm_phase phase);
     extern function void connect_phase(uvm_phase phase);
  
-endclass
+endclass : mstr_agnt_ahb
 
             function mstr_agnt_ahb::new(string name = "mstr_agnt_ahb",uvm_component parent);
                 super.new(name,parent);
