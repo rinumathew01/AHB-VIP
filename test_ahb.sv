@@ -23,7 +23,7 @@ endclass : base_test
         function void base_test::build_phase(uvm_phase phase);
             env_cfg = env_config :: type_id :: create("env_cfg");
 
-            if(!(uvm_config_db #(virtual intf_ahb)::get(null,"","intf_ahb",intf)))
+            if(!(uvm_config_db #(virtual intf_ahb)::get(null,"","intf_ahb",vif)))
                 `uvm_fatal(get_type_name(),"Failed to access vif from config db");
 
             env_cfg.vif = vif;

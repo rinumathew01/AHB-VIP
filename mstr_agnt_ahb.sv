@@ -3,7 +3,7 @@ class mstr_agnt_ahb extends uvm_agent;
     `uvm_component_utils(mstr_agnt_ahb)
 
     magnt_config magnt_cfg;
-    uvm_active_passive_agent is_active;
+    uvm_active_passive_enum is_active;
 
     mstr_driv_ahb mdriv;
     mstr_mon_ahb mmon;

@@ -2,6 +2,7 @@ class slv_driv_ahb extends uvm_driver#(slv_item_ahb);
 
     `uvm_component_utils(slv_driv_ahb)
 
+    virtual intf_ahb vif;
     slv_item_ahb sitem;
 
     extern function new(string name = "slv_driv_ahb",uvm_component parent);
@@ -16,7 +17,7 @@ endclass : slv_driv_ahb
 
         function void slv_driv_ahb::build_phase(uvm_phase phase);
             super.build_phase(phase);
-            if(!(uvm_config_db #(virtual intf_ahb)::get(null,"*","intf_ahb",intf)))
+            if(!(uvm_config_db #(virtual intf_ahb)::get(null,"*","intf_ahb",vif)))
                 `uvm_fatal(get_type_name(),"Failed to access interface");
             sitem = slv_item_ahb :: type_id :: create("sitem",this);
         endfunction
