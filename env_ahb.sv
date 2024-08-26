@@ -7,8 +7,8 @@ class env_ahb extends uvm_env;
     magnt_config magnt_cfg;
     sagnt_config sagnt_cfg;
 
-    mstr_agnt_ahb mgnt;
-    slv_agnt_ahb sgnt;
+    mstr_agnt_ahb magnt;
+    slv_agnt_ahb sagnt;
 
     vseqr_ahb vseqr;
 
@@ -40,8 +40,8 @@ endclass :env_ahb
 
             super.build_phase(phase);
 
-            mgnt = mstr_agnt_ahb :: type_id :: create("magnt",this);
-            sgnt = slv_agnt_ahb :: type_id :: create("sagnt",this);
+            magnt = mstr_agnt_ahb :: type_id :: create("magnt",this);
+            sagnt = slv_agnt_ahb :: type_id :: create("sagnt",this);
 
             vseqr = vseqr_ahb :: type_id :: create("vseqr",this);
 
